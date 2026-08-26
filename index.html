@@ -1,0 +1,229 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>
+      profile - jordan warne
+    </title>
+    <meta charset="utf-8">
+    <meta name="description" content="jordan warne's profile">
+    <meta property="og:title" content="profile - jordan warne">
+    <meta property="og:description" content="jordan warne's profile">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/minimal.css" rel="stylesheet">
+    <style>
+      :root { color-scheme: light; }
+      html, body { background:#FAFAFA; color:#111; }
+      body, h1, h2, h3, h4, h5, h6, p, li, a, span, table, td, th {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+      }
+      h1, h2, h3, h4, h5, h6 { color:#111; font-weight:400; }
+      a { color:#111; text-decoration:none; transition:color .2s ease; }
+      a:hover { color:#555; }
+      .experience-container { display:flex; flex-direction:column; gap:16px; margin:24px 0; }
+      .exp-card {
+        position:relative; background:#fff; border:1px solid #e5e5e5; border-radius:0; padding:20px; color:#333;
+        overflow:hidden; transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+      }
+      .exp-card:hover { border-color:#ccc; box-shadow:0 4px 20px rgba(0,0,0,.06); transform:translateY(-2px); }
+      .exp-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px; gap:12px; }
+      .exp-title-group { display:flex; flex-direction:column; align-items:flex-start; gap:6px; flex:1; }
+      .exp-title { font-size:1.15rem; font-weight:400; color:#111; letter-spacing:.02em; line-height:1.2; }
+      .exp-company { font-size:.85rem; font-weight:400; text-transform:uppercase; letter-spacing:.08em; line-height:1; }
+      .exp-company a { color:#666; display:inline-flex; align-items:center; gap:8px; line-height:1; }
+      .exp-company a:hover { color:#000; }
+      .company-logo { width:14px; height:14px; display:inline-block; object-fit:contain; filter:grayscale(100%); transition:filter .2s ease, transform .2s ease; }
+      .exp-company a:hover .company-logo { filter:grayscale(0); transform:scale(1.1); }
+      .exp-date {
+        font-size:.7rem; color:#666; background:#f5f5f5; border:1px solid #e0e0e0; padding:4px 8px; border-radius:0;
+        letter-spacing:.06em; text-transform:uppercase; white-space:nowrap; flex-shrink:0; margin-top:2px;
+      }
+      .exp-desc { font-size:.95rem; line-height:1.6; margin-top:10px; color:#444; }
+      .thumb-section-label { font-size:.68rem; text-transform:uppercase; letter-spacing:.08em; color:#777; margin:16px 0 6px; font-weight:400; }
+      .exp-thumbnails { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+      .thumb-link { display:block; border-radius:0; overflow:hidden; border:1px solid #e5e5e5; background:#f9f9f9; aspect-ratio:16/9; transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+      .thumb-link:hover { transform:translateY(-2px); border-color:#bbb; box-shadow:0 4px 12px rgba(0,0,0,.08); }
+      .thumb-img { width:100%; height:100%; object-fit:cover; display:block; }
+      .exp-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:16px; padding-top:14px; border-top:1px solid #eee; text-align:center; }
+      .stat-box { display:flex; flex-direction:column; align-items:center; }
+      .stat-value { font-size:1.2rem; font-weight:400; color:#111; letter-spacing:.02em; }
+      .stat-label { font-size:.7rem; text-transform:uppercase; letter-spacing:.08em; color:#777; margin-top:2px; }
+      .prami-body { fill:#ff69ad; }
+      .prami-left-eye, .prami-right-eye { fill:#461036; }
+      .prami-left-eye-pupil, .prami-right-eye-pupil { stroke:#461036; }
+      .prami-left-cheek, .prami-right-cheek { fill:#e34198; }
+      .prami-mouth { stroke:#461036; }
+      @media (max-width:480px) {
+        .exp-card { padding:16px; }
+        .exp-header { gap:8px; }
+        .exp-title { font-size:.98rem; }
+        .exp-date { font-size:.62rem; padding:3px 6px; }
+        .exp-thumbnails { gap:6px; }
+        .exp-stats { gap:6px; }
+        .stat-value { font-size:1rem; }
+        .stat-label { font-size:.62rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="h-card">
+      <div id="profile-picture-container">
+        <img class="u-photo" alt="jw" id="profile-picture" src="https://profiles.cache.lol/jw/picture?v=1787044198">
+      </div>
+      <h1 class="p-name" id="name">
+        jordan warne
+      </h1>
+      <div class="p-note" id="bio">
+        <div class="metadata p-region" id="location">
+          <i class="fa-solid fa-fw fa-location-dot"></i> australia
+        </div>
+        <div class="metadata p-job-title" id="occupation">
+          <i class="fa-solid fa-fw fa-briefcase"></i> creative
+        </div>
+        <div class="metadata" id="pronouns">
+          she/they
+        </div>
+      </div>
+      <div id="profile-items">
+        <div class="experience-container">
+          <div class="exp-card">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <div class="exp-title">
+                  Digital Content Producer
+                </div>
+                <div class="exp-company">
+                  <a class="u-url" href="https://privacyguides.org" target="_blank" rel="noopener">Privacy Guides</a>
+                </div>
+              </div>
+              <div class="exp-date">
+                Jan 2025 – Present
+              </div>
+            </div>
+            <div class="exp-desc">
+              Producing engaging cybersecurity and privacy education videos for a non-profit audience, expanding reach and digital literacy.
+            </div>
+            <div class="thumb-section-label">
+              Featured Work
+            </div>
+            <div class="exp-thumbnails">
+              <a href="https://www.youtube.com/watch?v=v_50cBtSjyQ" target="_blank" rel="noopener" class="thumb-link"><img src="images/maxresdefault_5.jpg" alt="Privacy Guides Video 1" class="thumb-img"></a> <a href="https://youtu.be/riu1k4ovYGI" target="_blank" rel="noopener" class="thumb-link"><img src="images/maxresdefault_4.jpg" alt="Privacy Guides Video 2" class="thumb-img"></a> <a href="https://www.youtube.com/watch?v=hmKQyeyOd54" target="_blank" rel="noopener" class="thumb-link"><img src="images/maxresdefault.jpg" alt="Privacy Guides Video 3" class="thumb-img"></a>
+            </div>
+            <div class="exp-stats">
+              <div class="stat-box">
+                <span class="stat-value">23x</span> <span class="stat-label">Audience Growth</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-value">100+</span> <span class="stat-label">Videos Produced</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-value">10k+</span> <span class="stat-label">Audience Reach</span>
+              </div>
+            </div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <div class="exp-title">
+                  Video &amp; Clips Editor
+                </div>
+                <div class="exp-company">
+                  <a class="u-url" href="https://techlore.tech" target="_blank" rel="noopener">Techlore Inc.</a>
+                </div>
+              </div>
+              <div class="exp-date">
+                Jan 2024 – Apr 2025
+              </div>
+            </div>
+            <div class="exp-desc">
+              Crafted long-form and short-form video content simplifying complex digital rights and privacy topics across main and clip channels.
+            </div>
+            <div class="thumb-section-label">
+              Featured Edits
+            </div>
+            <div class="exp-thumbnails">
+              <a href="https://www.youtube.com/watch?v=hQkKdXZiVj4" target="_blank" rel="noopener" class="thumb-link"><img src="images/maxresdefault_1.jpg" alt="Techlore Video 1" class="thumb-img"></a> <a href="https://www.youtube.com/watch?v=-nv3IEtXhF8" target="_blank" rel="noopener" class="thumb-link"><img src="images/maxresdefault_2.jpg" alt="Techlore Video 2" class="thumb-img"></a> <a href="https://www.youtube.com/watch?v=56WUKGVWj7Q" target="_blank" rel="noopener" class="thumb-link"><img src="images/maxresdefault_3.jpg" alt="Techlore Video 3" class="thumb-img"></a>
+            </div>
+            <div class="exp-stats">
+              <div class="stat-box">
+                <span class="stat-value">1M+</span> <span class="stat-label">Clip Views</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-value">3</span> <span class="stat-label">Channels Managed</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-value">10M+</span> <span class="stat-label">Impressions</span>
+              </div>
+            </div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <div class="exp-title">
+                  Thumbnail Designer
+                </div>
+                <div class="exp-company">
+                  <a class="u-url" href="https://www.youtube.com/@surveillancereport" target="_blank" rel="noopener">Surveillance Report</a>
+                </div>
+              </div>
+              <div class="exp-date">
+                Apr 2024 – Apr 2025
+              </div>
+            </div>
+            <div class="exp-desc">
+              Created eye-catching thumbnail art and branding that visually communicated episode core themes to drive podcast click-throughs.
+            </div>
+            <div class="thumb-section-label">
+              Featured Thumbnails
+            </div>
+            <div class="exp-thumbnails">
+              <a href="https://www.youtube.com/watch?v=zraliKacy2Y" target="_blank" rel="noopener" class="thumb-link"><img src="images/maxresdefault_7.jpg" alt="Surveillance Report Thumbnail 1" class="thumb-img"></a> <a href="https://www.youtube.com/watch?v=ST4v1wea99s" target="_blank" rel="noopener" class="thumb-link"><img src="images/maxresdefault_6.jpg" alt="Surveillance Report Thumbnail 2" class="thumb-img"></a> <a href="https://www.youtube.com/watch?v=vA44foHF4mU" target="_blank" rel="noopener" class="thumb-link"><img src="images/maxresdefault_8.jpg" alt="Surveillance Report Thumbnail 3" class="thumb-img"></a>
+            </div>
+            <div class="exp-stats">
+              <div class="stat-box">
+                <span class="stat-value">50+</span> <span class="stat-label">Thumbnails</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-value">800k+</span> <span class="stat-label">Views</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-value">Biweekly</span> <span class="stat-label">Release Cadence</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>
+          things
+        </h2>
+        <ul class="fa-ul">
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-image"></i></span><a class="u-url" rel="me" href="https://jw.some.pics">photography</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-brands fa-linkedin"></i></span><a class="u-url" rel="me" href="https://linkedin.com/in/jordan-warne">linkedin</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-brands fa-github"></i></span><a class="u-url" rel="me" href="https://github.com/jordan-warne">github</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-brands fa-mastodon"></i></span><a class="u-url" rel="me" href="https://social.lol/@jw">mastodon</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-at"></i></span><a class="u-url" rel="me" href="https://bsky.app/profile/jordanwarne.net">bluesky</a>
+          </li>
+        </ul>
+        <h2>
+          contact me
+        </h2>
+        <ul class="fa-ul">
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-envelope"></i></span><a rel="me" class="u-email" href="mailto:contact@jordanwarne.net">contact@jordanwarne.net</a>
+          </li>
+        </ul>
+      </div>
+      <div id="footer">
+        <p>static profile</p>
+      </div>
+    </main>
+  
+</body></html>

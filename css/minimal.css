@@ -1,0 +1,76 @@
+/*
+
+Copyright (c) 2021 Jane Manchun Wong. All rights reserved.
+
+This work is licensed under the terms of the MIT license.  
+For a copy, see <https://opensource.org/licenses/MIT>.
+
+Theme: Minimal
+Author: Jane Manchun Wong (@wongmjane)
+License: MIT
+Version: 1.0
+Description: A minimal theme with automatic light/dark mode detection.
+
+*/
+
+:root {
+	--bg: #FAFAFA;
+	--fg: #202020;
+	--verified: rgb(29, 161, 242);
+}
+
+html, body {
+	min-height: 100vh;
+	background: var(--bg);
+	color: var(--fg);
+}
+
+body {
+	background: var(--bg);
+	padding: unset;
+}
+
+body, a, a:link, a:visited {
+	color: var(--fg);
+}
+
+main {
+	background: #FAFAFA;
+	padding: 1.5em;
+}
+
+#name {
+	font-size: 1.5em;
+	/* font-weight: 500; */
+}
+
+
+#pfp_preview {
+	filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.1));
+}
+
+#pronouns {
+	color: var(--fg);
+	opacity: 0.7;
+}
+
+main > ul > li > a:link, main > ul > li > a:visited {
+	border-bottom-color: var(--fg);
+}
+
+#footer {
+	margin-top: 3em;
+}
+
+#footer a:link, #footer a:visited, #footer a:hover, #footer a:active {
+	color: var(--fg);
+	text-decoration: none;
+	border: 0;
+	opacity: 0.8;
+}
+
+.fa-li, .fas {
+	color: var(--fg);
+	fill: var(--fg);
+	stroke: var(--fg);
+}
